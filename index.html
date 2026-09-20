@@ -468,8 +468,6 @@
     
     <div class="bouquet-wrapper">
       <!-- Bó hoa trái tim thắt nơ hồng sắc nét -->
-      <img src="https://images.vexels.com/media/users/3/260786/isolated/preview/fa0fe7215c2ec0fef0cf43ffae5fa21e-heart-balloons-flower-bouquet.png" alt="Heart Bouquet">
-    </div>
 
     <div class="hint-text">Nên xoay ngang màn hình để trải nghiệm tốt hơn 💖</div>
     <button class="btn-ready" onclick="enterExperience()">Sẵn sàng 💖</button>
@@ -486,7 +484,7 @@
         <div class="header-title">🎂 Chúc Chi Tameo sinh nhật vui vẻ! 🎉</div>
         <div class="gallery-grid">
           <div class="main-photo">
-            <img id="mainImg" src="images/anh-1.jpg" alt="Main Photo">
+            <img id="images/anh-1.jpg" src="images/anh-1.jpg" alt="Main Photo">
           </div>
           <div class="side-photo-list" id="sideList"></div>
         </div>
@@ -563,9 +561,9 @@
 
     // --- 2. DỮ LIỆU ẢNH & TỰ ĐỘNG CHẠY SLIDE ---
     const photoList = [
-		"images/anh-1.jpg",
-		"images/anh-2.jpg",
-		"images/anh-3.jpg",
+	  "images/anh-1.jpg",
+	  "images/anh-2.jpg",
+	  "images/anh-3.jpg",
 	  "images/anh-4.jpg",
 	  "images/anh-5.jpg",
 	  "images/anh-6.jpg",
@@ -590,7 +588,7 @@
         if (index !== currentMainIndex) {
           const div = document.createElement("div");
           div.className = "side-item";
-          div.innerHTML = `<img src="${src}" alt="Sub Photo">`;
+          div.innerHTML = `<img src="images/anh-13.jpg" alt="Sub Photo">`;
           div.onclick = () => {
             switchPhoto(index);
             resetAutoSlide();
